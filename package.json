@@ -1,0 +1,64 @@
+{
+  "name": "eslint-import-resolver-package-name-import",
+  "version": "1.0.0",
+  "description": "A eslint-plugin-import resolver for eslint-import-resolver-package-name-import",
+  "keywords": [
+    "babel",
+    "import",
+    "root",
+    "eslint",
+    "eslint-plugin-import",
+    "resolver"
+  ],
+  "homepage": "https://github.com/vinsonchuong/eslint-import-resolver-package-name-import",
+  "bugs": "https://github.com/vinsonchuong/eslint-import-resolver-package-name-import/issues",
+  "license": "MIT",
+  "author": "Vinson Chuong <vinsonchuong@gmail.com>",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src"
+  ],
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinsonchuong/eslint-import-resolver-package-name-import"
+  },
+  "scripts": {
+    "test": "standard --fix && ava"
+  },
+  "dependencies": {
+    "babel-plugin-package-name-import": "^1.0.0",
+    "babel-runtime": "^6.22.0",
+    "resolve": "^1.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-core": "^6.22.1",
+    "babel-plugin-module-resolver": "^2.5.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "standard-esnext": "^1.0.5"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "plugins": [
+      "transform-runtime",
+      [
+        "module-resolver",
+        {
+          "alias": {
+            "eslint-import-resolver-package-name-import": "./"
+          }
+        }
+      ]
+    ]
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": "babel-register"
+  }
+}
