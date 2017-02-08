@@ -1,6 +1,6 @@
 {
   "name": "eslint-import-resolver-package-name-import",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A eslint-plugin-import resolver for eslint-import-resolver-package-name-import",
   "keywords": [
     "babel",
