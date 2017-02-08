@@ -19,10 +19,14 @@ export function resolve (source, file) {
     source
   )
 
-  const absolutePath = nodeResolve.sync(resolvedPath, {basedir: path.dirname(file)})
+  try {
+    const absolutePath = nodeResolve.sync(resolvedPath, {basedir: path.dirname(file)})
 
-  return {
-    found: true,
-    path: absolutePath
+    return {
+      found: true,
+      path: absolutePath
+    }
+  } catch (error) {
+    return {found: false}
   }
 }

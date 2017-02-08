@@ -47,4 +47,14 @@ test((t) => {
       path: path.resolve('src/index.js')
     }
   )
+
+  t.deepEqual(
+    resolve(
+      'eslint-import-resolver-package-name-import/notFound',
+      path.resolve('src/index.js')
+    ),
+    {
+      found: false
+    }
+  )
 })
