@@ -1,6 +1,6 @@
 {
   "name": "eslint-import-resolver-package-name-import",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A eslint-plugin-import resolver for eslint-import-resolver-package-name-import",
   "keywords": [
     "babel",
@@ -15,8 +15,6 @@
   "license": "MIT",
   "author": "Vinson Chuong <vinsonchuong@gmail.com>",
   "files": [
-    "LICENSE",
-    "README.md",
     "src"
   ],
   "main": "src/index.js",
